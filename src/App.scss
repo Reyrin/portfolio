@@ -160,3 +160,56 @@ ul {
 .contacts p {
 	width: 50%;
 }
+
+@media (max-width: 600px) {
+	.title {
+		font-size: 60px;
+	}
+
+	.subtitle {
+		font-size: 40px;
+	}
+
+	.description {
+		font-size: 25px;
+	}
+
+	.skills {
+		font-size: 30px;
+
+	}
+
+	.contacts p {
+		font-size: 30px;
+		margin: 15px 0;
+		width: 100%;
+	}
+}
+
+@media (max-width: 425px) {
+	.title {
+		font-size: 55px;
+	}
+
+	.subtitle {
+		font-size: 35px;
+	}
+
+	.description {
+		font-size: 20px;
+	}
+
+	.skills {
+		font-size: 20px;
+
+	}
+
+	.contacts p {
+		font-size: 20px;
+	}
+
+	.project-card__img {
+		width: 292px;
+		height: 212px;
+	}
+}
