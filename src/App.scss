@@ -1,6 +1,6 @@
 body {
 	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-	background-color: #272525;
+	background-color: #111;
 	color: #fff;
 }
 
@@ -11,8 +11,8 @@ body {
 }
 
 a {
-    text-decoration: none;
-	color: #fff;
+    text-decoration: underline;
+	color: #dd5644;
 }
 
 a:hover {
@@ -24,8 +24,14 @@ strong {
 	color: #dd5644;
 }
 
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
 .container {
-	max-width: 1150px;
+	max-width: 1200px;
+	padding: 0 15px 30px;
 	margin: 0 auto;
 }
 
@@ -35,7 +41,7 @@ strong {
 }
 
 .subtitle {
-	font-size: 40px;
+	font-size: 50px;
 }
 
 .description {
@@ -56,14 +62,15 @@ strong {
 	}
 }
 
-.projects {
+.projects,
+.mini-projects {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 
 .project-card {
-	margin-bottom: 15px;
+	margin: 10px 8px;
 	box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
 
 	&__img {
@@ -88,13 +95,21 @@ strong {
 		width: 100%;
 		height: 100%;
 		display: flex;
-		justify-content: center;
+		flex-direction: column;
 		align-items: center;
 
 		opacity: 0;
-		font-size: 30px;
+		font-size: 25px;
 		color: #fff;
 		transition: opacity .5s ease-in-out;
+		cursor: default;
+		
+		text-align: center;
+	}
+
+	&__title {
+		margin-top: 5px;
+		margin-bottom: 25px;
 	}
 
 	&__refs {
@@ -109,6 +124,7 @@ strong {
 			padding: 10px;
 
 			color: #fff;
+			text-decoration: none;
 			font-size: 20px;
 			font-weight: bold;
 
@@ -128,4 +144,19 @@ strong {
 			text-decoration: none;
 		}
 	}
+}
+
+.skills {
+	font-size: 40px;
+	text-align: center;
+}
+
+.contacts {
+	font-size: 35px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.contacts p {
+	width: 50%;
 }
