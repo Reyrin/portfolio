@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import ProjectCard from "../components/ProjectCard";
+import DarkMode from "../components/DarkMode";
 
 function Portfolio() {
 	return (
@@ -10,24 +11,11 @@ function Portfolio() {
 				<Link className="header__link" to="/profile">
 					Profile
 				</Link>
+				<DarkMode />
 			</header>
 			<main>
 				<div className="container">
 					<h1 className="title">Portfolio</h1>
-
-					<p className="description">
-						<strong>Важно!</strong> Подробное описание того, какие
-						технологий я применил, указаны на{" "}
-						<a
-							href="https://github.com/Reyrin"
-							target="_blank"
-							rel="noreferrer"
-						>
-							<strong>github</strong>
-						</a>
-						, в readme файле каждого проекта.
-					</p>
-
 					<h2 className="subtitle">Projects</h2>
 
 					<div className="projects">
@@ -41,6 +29,7 @@ function Portfolio() {
 								"React + Context",
 								"React Router Dom",
 								"Skeleton",
+								"Mock API",
 								"Axios",
 							]}
 							name={"👟 sneaker-store"}
@@ -104,7 +93,12 @@ function Portfolio() {
 							}
 							github={"https://github.com/Reyrin/quiz"}
 							demo={"https://reyrin.github.io/quiz/"}
-							stack={["React", "Trivia API", "Axios"]}
+							stack={[
+								"React",
+								"React-Hooks",
+								"Trivia API",
+								"Axios",
+							]}
 							name={"❓ Quiz"}
 						/>
 
@@ -114,8 +108,23 @@ function Portfolio() {
 							}
 							github={"https://github.com/Reyrin/TypeScript-Todo"}
 							demo={"https://reyrin.github.io/TypeScript-Todo/"}
-							stack={["Typescripy", "React"]}
+							stack={["TypeScript", "React", "React-Hooks"]}
 							name={"📝 TypeScript-Todo"}
+						/>
+
+						<ProjectCard
+							url={
+								"https://github.com/Reyrin/data/blob/master/img/portfolio%20projects/blog.png?raw=true"
+							}
+							github={"https://github.com/Reyrin/blog"}
+							demo={"https://reyrin.github.io/blog/"}
+							stack={[
+								"HTML, SCSS, JS",
+								"BEM",
+								"Gulp",
+								"Multi-page",
+							]}
+							name={"📜 Blog"}
 						/>
 
 						<ProjectCard
@@ -126,6 +135,7 @@ function Portfolio() {
 							demo={"https://reyrin.github.io/give-away/#/"}
 							stack={[
 								"React",
+								"React-Hooks",
 								"React Router Dom",
 								"Swiper Slider",
 								"SCSS",
@@ -158,9 +168,7 @@ function Portfolio() {
 							}
 							github={"https://github.com/Reyrin/Gallery-JS"}
 							demo={"https://reyrin.github.io/Gallery-JS/"}
-							stack={[
-								"HTML, CSS, JS",
-							]}
+							stack={["HTML, CSS, JS"]}
 							name={"🖼️ Gallery-JS"}
 						/>
 
@@ -170,9 +178,7 @@ function Portfolio() {
 							}
 							github={"https://github.com/Reyrin/TrelloClone-JS"}
 							demo={"https://reyrin.github.io/TrelloClone-JS/"}
-							stack={[
-								"HTML, CSS, JS",
-							]}
+							stack={["HTML, CSS, JS"]}
 							name={"📋 TrelloClone"}
 						/>
 
@@ -182,9 +188,7 @@ function Portfolio() {
 							}
 							github={"https://github.com/Reyrin/Clock-JS"}
 							demo={"https://reyrin.github.io/Clock-JS/"}
-							stack={[
-								"HTML, CSS, JS",
-							]}
+							stack={["HTML, CSS, JS"]}
 							name={"🕒 Clock-JS"}
 						/>
 
@@ -194,9 +198,7 @@ function Portfolio() {
 							}
 							github={"https://github.com/Reyrin/Slider-JS"}
 							demo={"https://reyrin.github.io/Slider-JS/"}
-							stack={[
-								"HTML, CSS, JS",
-							]}
+							stack={["HTML, CSS, JS"]}
 							name={"🖼️ Slider-JS"}
 						/>
 
@@ -206,9 +208,7 @@ function Portfolio() {
 							}
 							github={"https://github.com/Reyrin/Todo-JS"}
 							demo={"https://reyrin.github.io/Todo-JS/"}
-							stack={[
-								"HTML, CSS, JS",
-							]}
+							stack={["HTML, CSS, JS"]}
 							name={"📝 Todo-JS"}
 						/>
 					</div>

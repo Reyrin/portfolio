@@ -1,10 +1,10 @@
 import React from "react";
 import { Route } from "react-router-dom";
 
-import "./App.scss";
+import "./scss/app.scss";
 
-import Portfolio from './pages/Portfolio';
-import Profile from './pages/Profile';
+import Portfolio from "./pages/Portfolio";
+import Profile from "./pages/Profile";
 
 function App() {
 	return (

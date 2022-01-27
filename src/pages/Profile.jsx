@@ -1,18 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import DarkMode from './../components/DarkMode'
+
 function Profile() {
 	return (
 		<div className="profile">
 			<header className="header">
 				<Link className="header__link" to="/">
-					Protfolio
+					Portfolio
 				</Link>
+
+				<DarkMode />
 			</header>
 			<main>
 				<div className="container">
 					<h1 className="title">Front-end Developer</h1>
-					<p className="description">
+					<h2 className="subtitle">About Me</h2>
+					<div className="description">
 						<p>
 							Привет! Я фронтенд разработчик. Занимаюсь созданием
 							современных сайтов и SPA-приложений с полной
@@ -24,19 +29,19 @@ function Profile() {
 							сфере разработок. Люблю читать книги и статьи по
 							программированию. Так же увлекаюсь шахматами и авто.
 						</p>
-
 						<p>
 							Буду рад взаимовыгодному сотрудничеству. Имеется
 							огромное желание развиваться в сфере
 							программирования.
 						</p>
-					</p>
+					</div>
 
 					<h2 className="subtitle">Skills</h2>
 
 					<ul className="skills">
 						<li>HTML, CSS(Sass, БЭМ, Bootstrap)</li>
 						<li>JavaScript(ES5, ES6, Ajax) React + Redux</li>
+						<li>TypeScript</li>
 						<li>WebPack, Gulp</li>
 						<li>Git, GitHub</li>
 						<li>Adobe Photoshop, Zeplin, Figma</li>
