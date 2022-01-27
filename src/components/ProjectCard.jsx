@@ -2,12 +2,12 @@ import React from "react";
 
 const ProjectCard = ({url, github, demo, stack, name}) => {
 	return (
-		<div className="project-card">
+		<div className="project-card" data-aos="fade-up">
 			<div
 				className="project-card__img"
 				style={{
 					background:
-						`#eee url(${url}) no-repeat center bottom/contain`,
+						`#eee url(${url}) no-repeat center bottom/cover`,
 				}}
 			>
 				<div className="project-card__stack">

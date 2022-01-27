@@ -11,12 +11,13 @@ function Portfolio() {
 				<Link className="header__link" to="/profile">
 					Profile
 				</Link>
+
 				<DarkMode />
 			</header>
 			<main>
 				<div className="container">
-					<h1 className="title">Portfolio</h1>
-					<h2 className="subtitle">Projects</h2>
+					<h1 className="title" data-aos="fade-left">Portfolio</h1>
+					<h2 className="subtitle" data-aos="fade-right">Projects</h2>
 
 					<div className="projects">
 						<ProjectCard

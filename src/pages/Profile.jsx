@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import DarkMode from './../components/DarkMode'
+import DarkMode from "./../components/DarkMode";
 
 function Profile() {
 	return (
@@ -15,9 +15,13 @@ function Profile() {
 			</header>
 			<main>
 				<div className="container">
-					<h1 className="title">Front-end Developer</h1>
-					<h2 className="subtitle">About Me</h2>
-					<div className="description">
+					<h1 className="title" data-aos="fade-left">
+						Front-end Developer
+					</h1>
+					<h2 className="subtitle" data-aos="fade-right">
+						About Me
+					</h2>
+					<div className="description" data-aos="fade-up">
 						<p>
 							Привет! Я фронтенд разработчик. Занимаюсь созданием
 							современных сайтов и SPA-приложений с полной
@@ -30,25 +34,35 @@ function Profile() {
 							программированию. Так же увлекаюсь шахматами и авто.
 						</p>
 						<p>
-							Буду рад взаимовыгодному сотрудничеству. Имеется
-							огромное желание развиваться в сфере
+							Имеется огромное желание развиваться в сфере
 							программирования.
 						</p>
 					</div>
 
-					<h2 className="subtitle">Skills</h2>
+					<h2 className="subtitle" data-aos="fade-right">
+						Skills
+					</h2>
 
 					<ul className="skills">
-						<li>HTML, CSS(Sass, БЭМ, Bootstrap)</li>
-						<li>JavaScript(ES5, ES6, Ajax) React + Redux</li>
-						<li>TypeScript</li>
-						<li>WebPack, Gulp</li>
-						<li>Git, GitHub</li>
-						<li>Adobe Photoshop, Zeplin, Figma</li>
+						<li data-aos="fade-up">HTML, CSS(Sass, БЭМ, Bootstrap)</li>
+						<li data-aos="fade-up">JavaScript(ES5, ES6, Ajax) React + Redux</li>
+						<li data-aos="fade-up">TypeScript</li>
+						<li data-aos="fade-up">WebPack, Gulp</li>
+						<li data-aos="fade-up">Git, GitHub</li>
+						<li data-aos="fade-up">Adobe Photoshop, Zeplin, Figma</li>
 					</ul>
 
-					<h2 className="subtitle">Contacts</h2>
-					<div className="contacts">
+					<h2 className="subtitle" data-aos="fade-right">
+						Contacts
+					</h2>
+					<div className="description" data-aos="fade-up">
+						<p>Буду рад взаимовыгодному сотрудничеству.</p>
+						<p>
+							Можете связаться со мной в любое время, постараюсь
+							ответить как можно скорее!
+						</p>
+					</div>
+					<div className="contacts" data-aos="fade-up">
 						<p>
 							<a
 								href="https://github.com/Reyrin"
@@ -57,10 +71,6 @@ function Profile() {
 							>
 								GitHub
 							</a>
-						</p>
-
-						<p>
-							<a href="mailto:npmrun@vk.com">npmrun@vk.com</a>
 						</p>
 						<p>
 							<a href="tg://resolve?domain=cvlogs">Telegram</a>
@@ -73,6 +83,9 @@ function Profile() {
 							>
 								WhatsApp
 							</a>
+						</p>
+						<p>
+							<a href="mailto:npmrun@vk.com">npmrun@vk.com</a>
 						</p>
 					</div>
 				</div>

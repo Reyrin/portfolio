@@ -96,6 +96,7 @@ body.light {
 a {
     text-decoration: underline;
 	transition: color .2s ease-in-out;
+	color: #000;
 }
 
 ul {
@@ -160,13 +161,8 @@ ul {
 
 .contacts {
 	display: flex;
+	justify-content: space-between;
 	flex-wrap: wrap;
 
 	font-size: 35px;
-}
-
-.contacts p {
-	width: 50%;
-    
-	margin-bottom: 10px;
 }
