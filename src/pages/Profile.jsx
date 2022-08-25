@@ -77,7 +77,7 @@ function Profile() {
 						</p>
 						<p>
 							<a
-								href="https://wa.me/799773653342"
+								href="https://wa.me/79773653342"
 								target="_blank"
 								rel="noreferrer"
 							>
