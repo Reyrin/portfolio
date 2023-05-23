@@ -26,7 +26,7 @@ function Portfolio() {
 
 					<div className="projects">
 						{projects.map((project) => (
-							<ProjectCard project={project} />
+							<ProjectCard project={project} key={project.id} />
 						))}
 					</div>
 
@@ -34,7 +34,7 @@ function Portfolio() {
 
 					<div className="mini-projects">
 						{miniProjects.map((project) => (
-							<ProjectCard project={project} />
+							<ProjectCard project={project} key={project.id} />
 						))}
 					</div>
 				</div>
